@@ -1,0 +1,23 @@
+{
+  "name": "login-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "env-cmd -f config/prod.env node src/app.js",
+    "dev": "env-cmd -f config/dev.env nodemon src/app.js"
+  },
+  "author": "bid90",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.13",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
